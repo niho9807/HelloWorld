@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+    <addon id="repository.xstream" version="1.3" name="xStream Repository" provider-name="niho9807">
+        <extension point="xbmc.addon.repository">
+            <dir minversion="18.9.701" maxversion="21.9.700">
+                <info compressed="false">https://raw.githubusercontent.com/niho9807/HelloWorld/main/xStreamRebornRepo/zips/addons.xml</info>
+                <checksum verify="sha256">https://raw.githubusercontent.com/niho9807/HelloWorld/main/xStreamRebornRepo/zips/addons.xml.sha256</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/niho9807/HelloWorld/main/xStreamRebornRepo/zips/</datadir>
+            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="de_DE">xStream Repository (niho9807)</summary>
+            <summary lang="en_GB">xStream Repository (niho9807)</summary>
+            <description lang="de_DE">Dies ist ein Fork des xStream Repositorys, gehostet von niho9807.</description>
+            <description lang="en_GB">This is a fork of the xStream repository, hosted by niho9807.</description>
+            <disclaimer lang="de_DE">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
+            <disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
+            <language>de en</language>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+            <website>https://github.com/niho9807/HelloWorld</website>
+            <source>https://github.com/niho9807/HelloWorld</source>
+            <assets>
+                <icon>resources/icon.png</icon>
+                <fanart>resources/fanart.jpg</fanart>
+                <banner>resources/banner.png</banner>
+                <clearlogo>clearlogo.png</clearlogo>
+                <screenshot></screenshot>
+            </assets>
+        </extension>
+    </addon>
+
+    <addon id="plugin.video.xstream" version="4.3.0.5" name="xStream" provider-name="xStream-Team">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="script.module.resolveurl" version="5.1.173"/>
+            <import addon="script.module.future" version="0.18.2"/>
+            <import addon="script.module.fuzzywuzzy" version="0.18.0"/>
+            <import addon="script.module.mechanicalsoup" version="1.1.0"/>
+            <import addon="script.module.cfscrape" version="2.1.3"/>
+            <import addon="script.module.tls_client" version="1.1.1"/>
+            <import addon="script.module.pyaes" version="1.6.1"/>
+            <import addon="script.module.python_pushover" version="0.4.0"/>
+            <import addon="script.module.dom-python" version="3.0.1"/>
+            <import addon="script.module.requests" version="2.25.1"/>
+            <import addon="script.module.inputstreamhelper" version="0.5.10"/>
+            <import addon="plugin.video.youtube" version="6.8.23" optional="true"/>
+            <import addon="script.module.xstream.trailer" version="1.0.0" optional="true"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="de_DE">Serien und Filme auf Knopfdruck.</summary>
+            <summary lang="en_GB">Series and movies at the push of a button.</summary>
+            <description lang="de_DE">xStream bietet dir Zugriff auf eine Vielzahl an Serien und Filmen, die von diversen Webseiten eingebunden werden. Es fungiert als Schnittstelle zwischen Kodi und den Webseiten, um das Streaming-Erlebnis so angenehm wie möglich zu gestalten.[CR][CR]Für die Nutzung von xStream ist keinerlei Login oder Account bei den eingebundenen Webseiten notwendig (abgesehen von speziellen Funktionen wie z.B. Login-Bereichen).[CR][CR]Bitte beachte, dass xStream selbst keine Inhalte hostet. Alle angebotenen Inhalte stammen von externen Webseiten, für deren Verfügbarkeit und Rechtmäßigkeit xStream keine Verantwortung übernimmt. Die Nutzung erfolgt auf eigene Gefahr.</description>
+            <description lang="en_GB">xStream gives you access to a variety of series and movies that are embedded from various websites. It acts as an interface between Kodi and the websites to make the streaming experience as comfortable as possible.[CR][CR]No login or account on the integrated websites is required to use xStream (apart from special functions such as login areas).[CR][CR]Please note that xStream itself does not host any content. All content offered comes from external websites, for whose availability and legality xStream takes no responsibility. Use is at your own risk.</description>
+            <disclaimer lang="de_DE">Dieses Addon stellt lediglich eine Schnittstelle zu externen, frei zugänglichen Webseiten dar. Für den Inhalt dieser Webseiten sind ausschließlich deren Betreiber verantwortlich. xStream hostet selbst keinerlei urheberrechtlich geschütztes Material. Die Nutzung erfolgt auf eigene Gefahr und Verantwortung des Nutzers. Informieren Sie sich über die geltenden Gesetze in Ihrem Land.</disclaimer>
+            <disclaimer lang="en_GB">This addon is merely an interface to external, freely accessible websites. The operators of these websites are solely responsible for their content. xStream itself does not host any copyrighted material. Use is at your own risk and responsibility. Inform yourself about the applicable laws in your country.</disclaimer>
+            <language>de en</language>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+            <forum>https://www.kodinerds.net/index.php/Thread/70822-RELEASE-xStream-Video-Addon/</forum>
+            <website></website>
+            <source>https://github.com/niho9807/HelloWorld/tree/main/xStreamRebornRepo/plugin.video.xstream</source>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+                <banner>banner.png</banner>
+                <clearlogo>clearlogo.png</clearlogo>
+                <screenshot></screenshot>
+            </assets>
+        </extension>
+    </addon>
+
+    <addon id="script.module.resolveurl" version="5.1.175" name="ResolveURL" provider-name="gujal">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="script.module.six" version="1.16.0"/>
+            <import addon="script.module.kodi-six" version="0.1.3"/>
+            <import addon="script.module.requests" version="2.25.1"/>
+            <import addon="script.module.inputstreamhelper" version="0.5.10"/>
+            <import addon="script.module.pycryptodome" version="3.10.1"/>
+            <import addon="script.module.certifi" version="2020.12.21"/>
+            <import addon="script.module.chardet" version="4.0.0"/>
+            <import addon="script.module.idna" version="2.10"/>
+            <import addon="script.module.urllib3" version="1.26.4"/>
+            <import addon="script.module.socks" version="1.0.1" optional="true"/>
+            <import addon="script.module.addon.common" version="2.0.0"/>
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Resolve common video hoster urls</summary>
+            <description lang="en">Resolve common video hoster urls</description>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+            </assets>
+        </extension>
+    </addon>
+
+</addons>
