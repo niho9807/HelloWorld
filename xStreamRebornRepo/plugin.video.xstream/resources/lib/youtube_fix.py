@@ -21,7 +21,7 @@ def YT():
     addon_id='plugin.video.xstream'
     api_key='AIzaSyDnlJ0e_CZlLoZm7CMNnO41xInZgVFyObo'
     client_id='869922081769-d392du3vu6c8cpmtll11rpd7f09deu1n.apps.googleusercontent.com'
-    client_secret='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'
+    client_secret='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'
 
     if apikey == '' or apikey == None:
         try:
@@ -31,7 +31,9 @@ def YT():
                     try:
                         xbmc.sleep(1000)
                         with open(providerpath,'w' ) as f1y:
-                            f1y.write('# -*- coding: utf-8 -*-\n#mr-evil1\n'+f1x.replace("""                keys_changed = access_manager.dev_keys_changed(
+                            f1y.write('# -*- coding: utf-8 -*-
+#mr-evil1
+'+f1x.replace("""                keys_changed = access_manager.dev_keys_changed(
                     dev_id, dev_keys['key'], dev_keys['id'], dev_keys['secret']
                 )""","""                try:
                             keys_changed = access_manager.dev_keys_changed(dev_id, dev_keys['key'], dev_keys['id'], dev_keys['secret'])
@@ -62,7 +64,9 @@ def YT():
                     try:
                         xbmc.sleep(1000)
                         with open(youtubepath,'w' ) as f2y:
-                            f2y.write('# -*- coding: utf-8 -*-\n#mr-evil1\n'+f2x.replace("""log_params['key'] = '...'.join((key[:3], key[-3:]))""","""#log_params['key'] = '...'.join((key[:3], key[-3:]))"""))
+                            f2y.write('# -*- coding: utf-8 -*-
+#mr-evil1
+'+f2x.replace("""log_params['key'] = '...'.join((key[:3], key[-3:]))""","""#log_params['key'] = '...'.join((key[:3], key[-3:]))"""))
                     except:xbmcgui.Dialog().ok('','FEHLER2')
             import youtube_registration
             youtube_registration.register_api_keys(addon_id,api_key,client_id,client_secret)
