@@ -9,8 +9,7 @@
 	</extension>	
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">xStream Repository (niho9807)</summary>
-		<summary lang="en_GB">xStream Repository (niho9807)</summary>
-	
+		<summary lang="en_GB">xStream Repository (niho9807)</summary>	
 		<description lang="de_DE">Dies ist ein Fork des xStream Repositorys, gehostet von niho9807.</description>
 		<description lang="en_GB">This is a fork of the xStream repository, hosted by niho9807.</description>
 		<disclaimer lang="de_DE">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>

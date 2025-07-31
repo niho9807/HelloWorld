@@ -62,7 +62,7 @@
             <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
             <forum>https://www.kodinerds.net/index.php/Thread/70822-RELEASE-xStream-Video-Addon/</forum>
             <website></website>
-            <source>https://github.com/niho9807/HelloWorld/tree/main/xStreamRebornRepo/plugin.video.xstream</source>
+            <source>https://github.com/niho9807/HelloWorld/tree/main/plugin.video.xstream</source>
             <assets>
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
