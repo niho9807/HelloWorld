@@ -72,7 +72,8 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>xStream Reborn Repository</summary>
+        <summary lang="de_DE">xStream Reborn Repository</summary>
+		<summary lang="en_GB">xStream Reborn Repository</summary>
         <description lang="de_DE">Dies ist das offizielle xStream Reborn Repository – eine Wiedergeburt basierend auf xStream, ermöglicht durch die herausragende Arbeit der ursprünglichen Entwickler von xStream und xShip. Vielen Dank an beide Teams! [CR]Bei der Bereitstellung einer neuen xStream Reborn Version wird diese vor der Veröffentlichung auf Funktionalität geprüft. Sollten dennoch Probleme auftreten, benachrichtige bitte das offizielle xStream Reborn-Team via Github oder Chat.</description>
         <description lang="de_GB">This is the official xStream Reborn repository – a rebirth based on xStream, made possible thanks to the great work of the original developers of xStream and xShip. Big thanks to both teams! [CR]Before each new xStream Reborn version is released, it is tested for functionality. If you still encounter issues, please contact the official xStream Reborn team via GitHub or chat.</description>
         <disclaimer lang="de_DE">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream Reborn oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FAQ.</disclaimer>
