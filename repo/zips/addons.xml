@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.xstream" name="xStream" version="4.3.0.5" provider-name="xStream-Team">
+<addons><addon id="plugin.video.xstream" name="xStream Reborn" version="4.3.0.5" provider-name="xStream Reborn-Team">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -16,12 +16,12 @@
 	</extension>
     <extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de">xStream: Das Original</summary>
-		<summary lang="en_GB">xStream: The Original</summary>
-		<description lang="de">xStream ist ein Video-Addon für Kodi. xStream dient als Suchmaschine für Filme und Serien auf verschiedenen Webseiten.</description>
-		<description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
-		<disclaimer lang="de">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
-		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
+		<summary lang="de">xStream Reborn</summary>
+		<summary lang="en_GB">xStream Reborn</summary>
+		<description lang="de">xStream Reborn ist ein Video-Addon für Kodi. Es dient als Suchmaschine für Filme und Serien auf verschiedenen Webseiten.</description>
+		<description lang="en_GB">xStream Reborn is a video add-on for Kodi. It serves as a search engine for films and series on various websites.</description>
+		<disclaimer lang="de">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream Reborn oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FAQ.</disclaimer>
+		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream Reborn or the developers! For more information, see our Wiki and FAQ.</disclaimer>
 		<language>de en</language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
