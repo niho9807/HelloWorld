@@ -1,5 +1,8 @@
-[B]Version: 4.3.0.5[/B]
+[B]Version: 4.3.0.6[/B]
 
+11.08.2025
+
+- Neue Logos und Icons
 
 06.07.2025
 
