@@ -617,7 +617,7 @@ class cPluginHandler:
             + cConfig().getLocalizedString(30434) + '2' + ' ' + getDNS('Network.DNS2Address') + '\n' # DNS Nameserver 2
             + '\n'  # Absatz
             + cConfig().getLocalizedString(30421) + '\n'  # Repo Informationen
-            + cConfig('repository.xstream').getAddonInfo('name') + ':  ' + cConfig('repository.xstream').getAddonInfo('id') + ' - ' + cConfig('repository.xstream').getAddonInfo('version') + '\n'  # xStream Repository ID und Version
+            + cConfig('repository.xstreamreborn').getAddonInfo('name') + ':  ' + cConfig('repository.xstreamreborn').getAddonInfo('id') + ' - ' + cConfig('repository.xstreamreborn').getAddonInfo('version') + '\n'  # xStream Repository ID und Version
             + RESOLVEURL
             + '\n'  # Absatz
             + cConfig().getLocalizedString(30422) + '\n'  # Indexseiten Informationen
