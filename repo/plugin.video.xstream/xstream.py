@@ -54,11 +54,7 @@ def parseUrl():
             return
         elif sFunction == 'searchTMDB':
             searchTMDB(params)
-            return
-        elif sFunction == 'devUpdates':
-            from resources.lib import updateManager
-            updateManager.devUpdates()
-            return
+            return        
         elif sFunction == 'pluginInfo':
             cPluginHandler().pluginInfo()
             return
@@ -132,22 +128,14 @@ def parseUrl():
         resolver.display_settings()
         # resolves strange errors in the logfile
         oGui.setEndOfDirectory()
-        xbmc.executebuiltin('Action(ParentDir)')
-    # Manuelles Update im Hauptmenü
-    elif sSiteName == 'devUpdates':
-        from resources.lib import updateManager
-        updateManager.devUpdates()
+        xbmc.executebuiltin('Action(ParentDir)')    
     # Plugin Infos    
     elif sSiteName == 'pluginInfo':
         cPluginHandler().pluginInfo()
     # Changelog anzeigen    
     elif sSiteName == 'changelog':
         from resources.lib import tools
-        tools.changelog()
-    # Dev Warnung anzeigen
-    elif sSiteName == 'devWarning':
-        from resources.lib import tools
-        tools.devWarning()
+        tools.changelog()    
     # VoD Menü Site Name
     elif sSiteName == 'vod':
         vodGuiElements(sFunction)
@@ -273,14 +261,7 @@ def settingsGuiElements():
     oGuiElement.setThumbnail(os.path.join(ART, 'resolveurl_settings.png'))
     resolveurlSettings = oGuiElement
     
-    # GUI Nightly Updatemanager
-    oGuiElement = cGuiElement()
-    oGuiElement.setTitle(cConfig().getLocalizedString(30121))
-    oGuiElement.setSiteName('devUpdates')
-    oGuiElement.setFunction('devUpdates')
-    oGuiElement.setThumbnail(os.path.join(ART, 'manuel_update.png'))
-    DevUpdateMan = oGuiElement
-    return PluginInfo, xStreamSettings, resolveurlSettings, DevUpdateMan
+    return PluginInfo, xStreamSettings, resolveurlSettings
 
 
 def globalSearchGuiElement():

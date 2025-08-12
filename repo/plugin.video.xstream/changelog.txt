@@ -1,9 +1,10 @@
-[B]Version: 4.3.0.8[/B]
+[B]Version: 4.3.0.8.1[/B]
 
 11.08.2025
 
 - Neue Logos und Icons
 - Fehlerbehebungen aus der Umstellung
+- Entwickleroptionen entfernt
 
 06.07.2025
 

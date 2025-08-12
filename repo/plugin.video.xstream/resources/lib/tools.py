@@ -63,19 +63,6 @@ def changelog():
         announce += line
     textBox(heading, announce)
 
-
-# zeigt die Entwickler Optionen Warnung als Popup an
-def devWarning():
-    POPUP_PATH = translatePath(os.path.join('special://home/addons/' + cConfig().getAddonInfo('id') + '/resources/popup', 'devWarning.txt'))
-    heading = cConfig().getLocalizedString(30322)
-    with open(POPUP_PATH, mode='r', encoding='utf-8') as f:
-        cl_lines = f.readlines()
-    announce = ''
-    for line in cl_lines:
-        announce += line
-    textBox(heading, announce)
-
-
 # Erstellt eine Textbox
 def textBox(heading, announce):
     class TextBox():
